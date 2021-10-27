@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import * as S from "./styles";
 
 import Menu from "../Menu";
+import Slider from "../Slider";
 
 export default function Header() {
   const data = useStaticQuery(graphql`
@@ -40,7 +41,14 @@ export default function Header() {
       <Menu logo={query.logo.url} />
 
       <S.Container>
-        <h1>HEADER</h1>
+        <S.Wrapper>
+          <Slider
+            left={query.btnleft}
+            right={query.btnright}
+          >
+
+          </Slider>
+        </S.Wrapper>
       </S.Container>
     </>
   );
