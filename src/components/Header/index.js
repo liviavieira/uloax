@@ -41,6 +41,27 @@ export default function Header() {
       <Menu logo={query.logo.url} />
 
       <S.Container>
+
+        <S.Sectionbox>
+        <S.Boxnow>
+          <S.Paragraphnow>{query.booknow}</S.Paragraphnow>
+        </S.Boxnow>
+        <div>
+          <S.Paragraphcity>{query.bookacity}</S.Paragraphcity>
+        </div>
+        </S.Sectionbox>
+        <S.Sectionhire>
+        <S.Taxibox>
+          <S.Img src={query.imgtaxi.url} alt="taxi"/>
+        </S.Taxibox>
+        <S.Boxtakecar>
+          <S.Paragraphyou>{query.youreveryday}</S.Paragraphyou>
+          <S.Takeinput type="text" placeholder="PICKUP"/>
+          <S.Takeinput type="text" placeholder="DROP"/>
+          <S.Takeinput type="text" placeholder="WHEN"/>
+          <S.Btn>{query.search}</S.Btn>
+        </S.Boxtakecar>
+        </S.Sectionhire>
         <S.Wrapper>
           <Slider
             left={query.btnleft}
@@ -49,6 +70,7 @@ export default function Header() {
 
           </Slider>
         </S.Wrapper>
+
       </S.Container>
     </>
   );

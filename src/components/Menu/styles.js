@@ -6,6 +6,9 @@ export const Container = styled.div`
   left: 0;
   width: 100%;
   background: #1a1a1a;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 `;
 
 export const Wrapper = styled.div`
