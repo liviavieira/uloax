@@ -8,7 +8,7 @@ export const Container = styled.header`
 export const Wrapper = styled.section`
   margin: 0 auto;
   width: 80%;
-  height: calc(88vh - 4.2rem);
+  height: 88vh;
   color: #fff;
   text-align: center;
   background: #1a1a1a;
