@@ -1,96 +1,91 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  margin-bottom: 12vh;
+  margin: 4.2rem 0 12vh;
   background: #1a1a1a;
 `;
 
 export const Wrapper = styled.section`
-  margin: 0 auto;
-  width: 80%;
-  height: 88vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem 0 9rem;
+  height: 78vh;
   color: #fff;
   text-align: center;
   background: #1a1a1a;
 `;
 
-export const Sectionbox = styled.section`
-  display: flex;
-  justify-content: space-evenly;
-`;
-
-export const Boxnow = styled.div`
-  background-color: #f8ca12;
-  width: 30vw;
-  height: 25vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const Paragraphnow = styled.p`
-  font-size: 40px;
-  width: 23vw;
-`;
-
-export const Paragraphcity = styled.p`
-  font-size: 30px;
-  color: #ffffff;
-`;
-
-export const Boxtakecar = styled.div`
+export const Taxi = styled.figure`
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  height: 45vh;
+  justify-content: space-between;
+  width: 43.5%;
+`;
+
+export const Contact = styled.figcaption`
+  display: flex;
+  align-self: end;
+  flex-direction: column;
+  padding: 1rem 0 1.2rem;
+  width: 88%;
+  text-align: center;
+  font: 300 2.4em sans-serif;
+  background: #f8ca12;
+
+  span {
+    padding-top: 1.2rem;
+    color: #1a1a1a;
+  }
+`;
+
+export const HireBox = styled.div`
+  text-align: center;
+  width: 54%;
+`;
+
+export const Hire = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1.9rem;
+  width: 100%;
   background-color: #ffffff;
-  align-items: center;
-  position: relative;
-  bottom: 13vh;
 `
 
+export const Paragraphcity = styled.p`
+  margin: 3px 0 2rem;
+  color: #fff;
+  font: 300 1.64em sans-serif;
+`;
+
 export const Paragraphyou = styled.p`
-  color: #000000;
-  font-size: 25px;
-`
+  margin-bottom: .6rem;
+  color: #000;
+  font: 300 1.85em sans-serif;
+`;
 
 export const Takeinput = styled.input`
   display: flex;
-  width: 45vw;
-  height: 8vh;
+  margin-bottom: 1rem;
+  padding: .8rem 1.2rem .6rem;
+  width: 100%;
+  font: 300 1.1em sans-serif;
   border: none;
   border-radius: 0.3rem;
-  background-color: rgb(133, 133, 133, 0.3);
-  margin-bottom: 10px;
-`
+  background: #e1e1e1;
 
-export const Btn = styled.button`
-  display: flex;
-  width: 10vw;
-  height: 8vh;
-  border: none;
-  border-radius: 0.4rem;
-  background-color: #1a1a1a;
-  color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 15rem;
-`
-
-export const Taxibox = styled.div`
-  display: flex;
-  position: relative;
-  left: 3rem;
-  top: 4rem;
-`
-
-export const Sectionhire = styled.section`
-  display: flex;
-  justify-content: space-evenly;
+  &::placeholder { color: #1a1a1a; }
 `;
 
-export const Img = styled.img`
-  width: 40vw;
-  height: 55vh;
-`
+export const Search = styled.button`
+  align-self: end;
+  width: 10rem;
+  padding: 1.1rem 0;
+  color: #fff;
+  font: 300 1.05em sans-serif;
+  border: none;
+  border-radius: 10px;
+  background: #353433;
+`;
+
+export const Img = styled.img``;
