@@ -41,36 +41,35 @@ export default function Header() {
       <Menu logo={query.logo.url} />
 
       <S.Container>
-
-        <S.Sectionbox>
-        <S.Boxnow>
-          <S.Paragraphnow>{query.booknow}</S.Paragraphnow>
-        </S.Boxnow>
-        <div>
-          <S.Paragraphcity>{query.bookacity}</S.Paragraphcity>
-        </div>
-        </S.Sectionbox>
-        <S.Sectionhire>
-        <S.Taxibox>
-          <S.Img src={query.imgtaxi.url} alt="taxi"/>
-        </S.Taxibox>
-        <S.Boxtakecar>
-          <S.Paragraphyou>{query.youreveryday}</S.Paragraphyou>
-          <S.Takeinput type="text" placeholder="PICKUP"/>
-          <S.Takeinput type="text" placeholder="DROP"/>
-          <S.Takeinput type="text" placeholder="WHEN"/>
-          <S.Btn>{query.search}</S.Btn>
-        </S.Boxtakecar>
-        </S.Sectionhire>
         <S.Wrapper>
-          <Slider
-            left={query.btnleft}
-            right={query.btnright}
-          >
 
-          </Slider>
+          <S.Taxi>
+            <S.Contact>
+              {query.booknow.slice(0,8)}
+              <span> (+71) 1234567890</span>
+            </S.Contact>
+            <Slider
+              left={query.btnleft}
+              right={query.btnright}
+            >
+              <S.Img src={query.imgtaxi.url} alt="taxi"/>
+              <S.Img src={query.imgtaxi.url} alt="taxi"/>
+              <S.Img src={query.imgtaxi.url} alt="taxi"/>
+            </Slider>
+          </S.Taxi>
+
+          <S.HireBox>
+            <S.Paragraphcity>{query.bookacity}</S.Paragraphcity>
+            <S.Hire>
+              <S.Paragraphyou>{query.youreveryday}</S.Paragraphyou>
+              <S.Takeinput type="text" placeholder="PICKUP"/>
+              <S.Takeinput type="text" placeholder="DROP"/>
+              <S.Takeinput type="text" placeholder="WHEN"/>
+              <S.Search>{query.search}</S.Search>
+            </S.Hire>
+          </S.HireBox>
+
         </S.Wrapper>
-
       </S.Container>
     </>
   );
