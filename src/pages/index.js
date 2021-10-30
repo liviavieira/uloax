@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 import GlobalStyle from "../components/GlobalStyles";
@@ -13,12 +14,16 @@ const Main = styled.main``;
 export default function Index() {
   return (
     <>
+      <Helmet>
+        <title>ULOAX</title>
+        <html style='scroll-behavior: smooth'/>
+      </Helmet>
       <GlobalStyle />
 
       <Header />
       <Main>
-        {/* <Models /> */}
-        {/* <Features /> */}
+        <Models />
+        <Features />
         {/* <Download /> */}
       </Main>
       {/* <Footer /> */}
