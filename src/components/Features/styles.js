@@ -37,7 +37,7 @@ export const Img = styled.img``;
 
 export const RowInfo = styled.figcaption`
   display: flex;
-  align-items: ${props => props.isOdd && 'end'};
+  align-items: ${props => props.isOdd ? 'end' : 'start'};
   text-align: ${props => props.isOdd && 'end'};
   flex-direction: column;
   justify-content: space-between;
