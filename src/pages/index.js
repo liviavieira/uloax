@@ -26,7 +26,7 @@ export default function Index() {
         <Features />
         {/* <Download /> */}
       </Main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
