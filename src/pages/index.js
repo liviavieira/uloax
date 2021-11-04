@@ -24,7 +24,7 @@ export default function Index() {
       <Main>
         <Models />
         <Features />
-        {/* <Download /> */}
+        <Download />
       </Main>
       <Footer />
     </>
