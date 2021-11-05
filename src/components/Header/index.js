@@ -52,9 +52,9 @@ export default function Header() {
               left={query.btnleft}
               right={query.btnright}
             >
-              <S.Img src={query.imgtaxi.url} alt="taxi"/>
-              <S.Img src={query.imgtaxi.url} alt="taxi"/>
-              <S.Img src={query.imgtaxi.url} alt="taxi"/>
+              <S.Img src={query.imgtaxiamerica.url} alt="Yellow taxi with America sticker"/>
+              <S.Img src={query.imgtaxi.url} alt="Yellow taxi"/>
+              <S.Img src={query.imgtaxi.url} alt="Yellow taxi"/>
             </Slider>
           </S.Taxi>
 

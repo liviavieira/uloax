@@ -11,12 +11,26 @@ export default function Slider({
   right
 }) {
   const settings = {
-    infinite: true,
+    accessibility: true,
+    centerMode: true,
+    infinite: false,
+    draggable: true,
+    autoplay: true,
+    arrows: true,
     speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <S.LeftArrow arrow={left} />,
-    nextArrow: <S.RightArrow arrow={right} />
+    nextArrow: <S.RightArrow arrow={right} />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
   };
 
   return (

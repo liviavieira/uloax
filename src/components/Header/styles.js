@@ -86,6 +86,10 @@ export const Search = styled.button`
   border: none;
   border-radius: 10px;
   background: #353433;
+  transition: .2s;
+  cursor: pointer;
+
+  &:hover { background: #444;}
 `;
 
 export const Img = styled.img``;
