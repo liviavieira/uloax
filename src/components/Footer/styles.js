@@ -17,7 +17,7 @@ export const Boxaddress = styled.div`
 
 export const Titleaddress = styled.h2`
     color: #ffffff;
-    font-size: 28px;
+    font-size: 32px;
 `
 
 export const Paragraphaddress = styled.p`
@@ -34,6 +34,7 @@ export const Boxlinks = styled.div`
 export const Titlelinks = styled.h2`
     display: flex;
     color: #ffffff;
+    font-size: 32px;
 `
 
 export const Linkimg = styled.img`
@@ -50,6 +51,7 @@ export const Paragraphlinks = styled.p`
 export const Titlefollow = styled.h2`
     display: flex;
     color: #ffffff;
+    font-size: 32px;
 `
 
 export const Followimg = styled.img`
@@ -70,6 +72,7 @@ export const Boxnew = styled.div`
 export const Titlenew = styled.h2`
     display: flex;
     color: #ffffff;
+    font-size: 32px;
 `
 export const Inputnew = styled.input`
     border: none;
@@ -77,6 +80,7 @@ export const Inputnew = styled.input`
     width: 100%;
     height: 20%;
     padding: 4%;
+    margin-top: 20px;
 `
 
 export const btn = styled.button`
@@ -88,4 +92,5 @@ export const btn = styled.button`
     border-radius: 10px;
     width: 85%;
     padding: 8%;
+    margin-top: 20px;
 `
