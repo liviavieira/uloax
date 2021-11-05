@@ -13,6 +13,10 @@ export const LeftArrow = styled.button`
   cursor: pointer;
   z-index: 1;
 
+  :active {
+    background: #ccc !important;
+  }
+
   &:before {
     content: '${props => props.arrow}';
     font: 600 1.5rem sans-serif;
@@ -22,9 +26,6 @@ export const LeftArrow = styled.button`
   &:hover {
     box-shadow: 0 5px 5px #333;
     background: #fff !important;
-  }
-  :active {
-    background: #ccc !important;
   }
 `;
 
