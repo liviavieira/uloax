@@ -6,8 +6,6 @@ export const Container = styled.div`
   left: 0;
   width: 100%;
   background: #1a1a1a;
-  width: 100%;
-  position: fixed;
   z-index: 1;
 `;
 
@@ -30,6 +28,22 @@ export const Navigation = styled.nav`
   margin-right: 3.5rem;
   padding-top: .8rem;
   width: 42%;
+  transition: .6s;
+  
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    margin: 0;
+    padding: 5rem 10rem;
+    width: 100%;
+    height: 100vh;
+    border-right: 2rem solid ${props => props.isMobile ? '#373737' : 'transparent'};
+    border-radius: ${props => props.isMobile ? '0' : '5px'};
+    transform: ${props => props.isMobile ? '' : 'translateX(100%)'};
+    background: ${props => props.isMobile && '#f8ca12'};
+  }
 `;
 
 export const Link = styled.a`
@@ -58,5 +72,50 @@ export const Link = styled.a`
       width: 60%;
       background: #f8ca11;
     }
+  }
+
+  @media (max-width: 768px) {
+    &:before {
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+    }
+  }
+`;
+
+export const MobileNav = styled.button`
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    position: relative;
+    content: '';
+    width: 1.8rem;
+    height: 4px;
+    background: #fff;
+    transition: .5s;
+  }
+  
+  &:before {
+    top: ${props => props.isMobile ? '6px' : '0'};
+    transform: ${props => props.isMobile ? 'rotate(-45deg)' : ''};
+  }
+  &:after {
+    top: ${props => props.isMobile ? '-6px' : '0'};
+    transform: ${props => props.isMobile ? 'rotate(45deg)' : ''};
+  }
+  
+  @media (max-width: 768px) {
+    display: flex;
   }
 `;
