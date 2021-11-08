@@ -12,7 +12,6 @@ export default function Slider({
 }) {
   const settings = {
     accessibility: true,
-    centerMode: true,
     infinite: false,
     draggable: true,
     autoplay: true,
@@ -24,7 +23,7 @@ export default function Slider({
     nextArrow: <S.RightArrow arrow={right} />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           arrows: false,
           dots: true

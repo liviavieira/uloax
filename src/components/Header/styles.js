@@ -10,9 +10,19 @@ export const Wrapper = styled.section`
   justify-content: space-between;
   padding: 1.5rem 1rem 0 9rem;
   height: 78vh;
+  min-height: 70vh;
   color: #fff;
   text-align: center;
   background: #1a1a1a;
+
+  @media (max-width: 1200px) {
+    padding-left: 1rem;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Taxi = styled.figure`
@@ -20,6 +30,10 @@ export const Taxi = styled.figure`
   flex-direction: column;
   justify-content: space-between;
   width: 43.5%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Contact = styled.figcaption`
@@ -36,11 +50,20 @@ export const Contact = styled.figcaption`
     padding-top: 1.2rem;
     color: #1a1a1a;
   }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    font-size: 1.6rem;
+  }
 `;
 
 export const HireBox = styled.div`
   text-align: center;
   width: 54%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Hire = styled.div`
@@ -56,12 +79,20 @@ export const Paragraphcity = styled.p`
   margin: 3px 0 2rem;
   color: #fff;
   font: 300 1.64em sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 1.2em;
+  }
 `;
 
 export const Paragraphyou = styled.p`
   margin-bottom: .6rem;
   color: #000;
   font: 300 1.85em sans-serif;
+
+  @media (max-width: 1200px) {
+    font-size: 1.5em;
+  }
 `;
 
 export const Takeinput = styled.input`
@@ -75,6 +106,11 @@ export const Takeinput = styled.input`
   background: #e1e1e1;
 
   &::placeholder { color: #1a1a1a; }
+
+  @media (max-width: 768px) {
+    align-self: center;
+    max-width: 480px;
+  }
 `;
 
 export const Search = styled.button`
@@ -90,6 +126,10 @@ export const Search = styled.button`
   cursor: pointer;
 
   &:hover { background: #444;}
+
+  @media (max-width: 1200px) {
+    width: 13rem;
+  }
 `;
 
 export const Img = styled.img``;
